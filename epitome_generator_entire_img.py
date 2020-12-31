@@ -101,7 +101,6 @@ for it in range(n_batches):
     if it == 9999:
         #pt.imshow(ep.mean.detach().cpu().numpy()[0,:3].T)
         fname = "path" + "forest_patch_1.png"
-        #fname = '/Users/ashleykwon/Desktop/'+ "Iteration "+str(it)+"_ep.png"
         pt.imsave(fname, np.flip(np.rot90(ep.mean.detach().cpu().numpy()[0,:3].T), axis = 0))
         #pt.show()
 print('all done')
